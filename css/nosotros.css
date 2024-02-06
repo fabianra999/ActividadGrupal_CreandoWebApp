@@ -6,19 +6,19 @@ body {
 
 @keyframes zoomIn {
     from {
-        transform: scale(1); /* Empieza con la escala normal */
+        transform: scale(1.1);
     }
     to {
-        transform: scale(1.1); /* Termina con un 20% más de la escala original */
+        transform: scale(1.2); 
     }
 }
 
 .presentation {
     background-image: url('https://storage.googleapis.com/iconos_images/imagencinefondo.webp');
-    background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
-    background-position: center; /* Centra la imagen de fondo */
-    animation: zoomIn 15s infinite alternate; /* Aplica la animación */
-    overflow: hidden; /* Evita desbordamiento fuera del contenedor */
+    background-size: cover; 
+    background-position: center; 
+    animation: zoomIn 15s infinite alternate;
+    overflow: hidden; 
 }
 
 
