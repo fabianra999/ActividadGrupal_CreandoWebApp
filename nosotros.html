@@ -11,13 +11,15 @@
     <link href="css/nosotros.css" rel="stylesheet" />
   </head>
   <body class="bg-light">
+    <a href="/index.html" class="text-secondary">Inicio</a>
     <section class="nosotros-block presentation bg-image text-white">
+        <div class="background-zoom"></div>
       <div class="container primer-bloque">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
             <h2>Nosotros</h2>
             <p class="lead">
-              Bienvenidos a GuíaCine, tu destino definitivo para sumergirte en
+              Bienvenidos a Cine Fans, tu destino definitivo para sumergirte en
               la magia del séptimo arte
             </p>
           </div>
@@ -72,7 +74,7 @@
             <div class="col-12">
               <h3>Nuestro Equipo</h3>
               <p>
-                Detrás de GuíaCine, hay un equipo de desarrolladores apasionados
+                Detrás de CineFans, hay un equipo de desarrolladores apasionados
                 por el cine, con un amplio conocimiento en desarrollo web y una
                 profunda admiración por el séptimo arte. Nuestro proyecto nació
                 como el trabajo final de una maestría en desarrollo web, pero
@@ -88,8 +90,18 @@
         </div>
       </div>
     </section>
+    <div class="container mt-5">
+        <h2>Formulario de Sugerencias</h2>
+        
+        <form>
+            
+            <div class="mb-3">
+                <textarea class="form-control" id="suggestionInput" rows="3" placeholder="Escribe tu sugerencia aquí..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Sugerencia</button>
+        </form>
+    </div>
 
-    <!-- Bootstrap Bundle con Popper -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

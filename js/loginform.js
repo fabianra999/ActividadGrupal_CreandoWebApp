@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    if (window.location.pathname.includes('home.html')) {
+        if (window.location.pathname.includes('home.html')) {
         const userEmail = sessionStorage.getItem('userEmail');
         if (userEmail) {
             document.getElementById('userEmail').textContent = userEmail;
         } else {
+            
             window.location.href = 'home.html';
         }
 
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const email = document.getElementById('email').value;
                 
                 if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-                    sessionStorage.setItem('userEmail', email);
+                    sessionStorage.setItem('userEmail', email); 
                     window.location.href = 'home.html'; 
                 } else {
                     alert('Por favor, introduce un correo electrónico válido.');
