@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1); /* Empieza con la escala normal */
+    }
+    to {
+        transform: scale(1.1); /* Termina con un 20% más de la escala original */
+    }
+}
+
+.presentation {
+    background-image: url('https://storage.googleapis.com/iconos_images/imagencinefondo.webp');
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    animation: zoomIn 15s infinite alternate; /* Aplica la animación */
+    overflow: hidden; /* Evita desbordamiento fuera del contenedor */
+}
+
+
+.primer-bloque {
+    display:flex;
+   align-items: center;
+    height: 250px;
+    padding: 20px;
+}
+
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bg-image .container {
+    position: relative;
+    z-index: 1;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+h2, h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+p.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    .nosotros-block {
+        margin-top: 40px;
+    }
+}
