@@ -1,0 +1,164 @@
+figure.movieFigure {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #1a1a1a;
+  color: #ffffff;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+figure.movieFigure * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+figure.movieFigure .image {
+  position: relative;
+}
+
+figure.movieFigure img {
+  max-width: 100%;
+  vertical-align: top;
+}
+figure.movieFigure img:hover {
+ transform: scale(1.3);
+}
+figure.movieFigure i {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  font-size: 32px;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+figure.movieFigure h3 {
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+figure.movieFigure:before,
+figure.movieFigure:after {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.movieFigure:before {
+  background-color: #20638f;
+  -webkit-transform: skew(-45deg) translateX(-150%);
+  transform: skew(-45deg) translateX(-150%);
+  border-right: 1px solid #20638f;
+}
+figure.movieFigure:after {
+  background-color: #962d22;
+  -webkit-transform: skew(-45deg) translateX(-175%);
+  transform: skew(-45deg) translateX(-175%);
+  border-right: 1px solid #962d22;
+}
+figure.movieFigure figcaption {
+  padding: 25px 80px 25px 25px;
+  background-color: #ffffff;
+  color: #000000;
+  position: relative;
+  font-size: 0.9em;
+}
+figure.movieFigure figcaption p {
+  margin-bottom: 15px;
+   display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+figure.movieFigure figcaption:before {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  z-index: 1;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  background-color: #20638f;
+  -webkit-transform: skew(-45deg) translateX(50%);
+  transform: skew(-45deg) translateX(50%);
+  border-right: 1px solid #20638f;
+}
+figure.movieFigure .add-to-cart {
+  display: inline-block;
+  width: auto;
+  border: 2px solid #20638f;
+  padding: 0.4em 0.6em;
+  color: #20638f;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+figure.movieFigure .add-to-cart:hover {
+  background-color: #20638f;
+  color: #ffffff;
+}
+figure.movieFigure .votes {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  z-index: 2;
+  text-transform: uppercase;
+  padding: 20px;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-align: center;
+}
+figure.movieFigure .votes p {
+      margin: 0;
+    font-size: 0.8em;
+}
+
+figure.movieFigure:hover i,
+figure.movieFigure.hover i {
+  opacity: 0.7;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.movieFigure:hover h3,
+figure.movieFigure.hover h3 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+figure.movieFigure:hover:before,
+figure.movieFigure.hover:before {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: skew(-45deg) translateX(-50%);
+  transform: skew(-45deg) translateX(-50%);
+}
+figure.movieFigure:hover:after,
+figure.movieFigure.hover:after {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transform: skew(-45deg) translateX(-75%);
+  transform: skew(-45deg) translateX(-75%);
+}
