@@ -15,6 +15,7 @@ if(formContacto){
         // Validar que los campos no estén vacíos
         if (nombres === "" || apellidos === "" || email === "" || Textarea1 === "") {
             document.getElementById("mensajeError").innerHTML = textError2;
+            return false;
         }
 
         // Validar el formato del correo electrónico
