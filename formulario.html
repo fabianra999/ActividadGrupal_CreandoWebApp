@@ -53,25 +53,26 @@
             <h4 class="text-center">Registro de contactenos</h4>
             <div class="alert alert-primary" id="mensaje" role="alert"></div>
             <div class="alert alert-danger" id="mensajeError" role="alert"></div>
+            <a class="btn btn-primary" onclick="goBack()">Regresar</a>
         <form id="formContacto">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nombres</label>
-                <input class="form-control" type="text" placeholder="Nombres" aria-label="default input example" id="nombres" required>
+                <input class="form-control" type="text" placeholder="Nombres" aria-label="default input example" id="nombres">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Apellidos</label>
-                <input class="form-control" type="text" placeholder="Apellidos" aria-label="default input example" id="apellidos" required>
+                <input class="form-control" type="text" placeholder="Apellidos" aria-label="default input example" id="apellidos">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" placeholder="name@example.com" id="email" required>
+                <input type="email" class="form-control" placeholder="name@example.com" id="email">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Area de texto</label>
-                <textarea class="form-control" id="Textarea1" rows="3" required></textarea>
+                <textarea class="form-control" id="Textarea1" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-            <button type="submit" class="btn btn-primary" onclick="goBack()">Regresar</button>
+            <button type="submit" class="btn btn-primary" id="btn-enviar">Enviar</button>
+            <button type="submit" class="btn btn-primary" onclick="Limpiar()">Limpiar</button>
         </form>
         </div>
 
