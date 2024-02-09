@@ -51,9 +51,9 @@
         <div class="contenedorForm">
             <h2 class="text-center mt-3">CineFans</h2>
             <h4 class="text-center">Registro de contactenos</h4>
-            <div class="alert alert-primary" id="mensaje" role="alert"></div>
-            <div class="alert alert-danger" id="mensajeError" role="alert"></div>
-            <a class="btn btn-primary" onclick="goBack()">Regresar</a>
+            <div id="mensaje" role="alert"></div>
+            <div id="mensajeError" role="alert"></div>
+            <a class="btn btn-primary" id="btn-regresar">Regresar</a>
         <form id="formContacto">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nombres</label>
@@ -72,7 +72,7 @@
                 <textarea class="form-control" id="Textarea1" rows="3"></textarea>
             </div>
             <button type="submit" class="btn btn-primary" id="btn-enviar">Enviar</button>
-            <button type="submit" class="btn btn-primary" onclick="Limpiar()">Limpiar</button>
+            <!-- <button type="submit" class="btn btn-primary" id="btn-limpiar">Limpiar</button> -->
         </form>
         </div>
 
