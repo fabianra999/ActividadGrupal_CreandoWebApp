@@ -34,9 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
      // Boton regresar
-    const goBack = document.querySelector("#btn-regresar");
-    goBack.addEventListener('click', () => {
-        window.location.href = 'index.html'; 
-    });
+
 });
 
